@@ -25,6 +25,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Implement Sparse MoE Top-k Expert Routing | Select the top k highest-scoring experts per token and compute routing weights as a softmax over only those selected logits. | https://www.tensortonic.com/problems/inference-moe-top-k-routing |
 | Simple Neural Network | Implement a class SimpleNet subclassing nn.Module with two linear layers and ReLU between them. | https://www.tensortonic.com/problems/pytorch-build-simple-nn-from-scratch |
 | Custom Linear Layer | Implement a custom linear layer that computes the affine transformation without using any built-in linear layer. | https://www.tensortonic.com/problems/pytorch-custom-linear-layer |
+| Tensor Operations | Perform common element-wise and matrix tensor operations: add, multiply, matmul, power, and max. | https://www.tensortonic.com/problems/pytorch-tensor-arithmetic |
 
 View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/e_kasthuri94)
 <!-- tensortonic:end -->
