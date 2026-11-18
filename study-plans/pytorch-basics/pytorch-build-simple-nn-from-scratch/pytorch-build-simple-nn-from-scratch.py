@@ -1,19 +1,15 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
+
 class SimpleNet(nn.Module):
     def __init__(self, in_features: int, hidden_size: int, out_features: int):
         super().__init__()
-        self.fc1 = nn.Linear(in_features,hidden_size)
-        self.fc2 = nn.Linear(hidden_size,out_features)
-        pass
+
+        self.fc1 = nn.Linear(in_features, hidden_size)
+        self.relu = nn.ReLU()
+        self.fc2 = nn.Linear(hidden_size, out_features)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        """
-        Returns a float32 tensor of shape (batch, out_features).
-        """
-        x = self.fc1(x)
-        x = F.relu(x)
-        x = self.fc2(x)
-        return x
-        pass
+        h = self.relu(self.fc1(x))
+        y = self.fc2(h)
+        return y
